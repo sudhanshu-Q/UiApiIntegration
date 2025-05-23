@@ -8,10 +8,14 @@ import java.util.Properties;
 
 public class Utilities {
 
+    private static final String PATH_URL_PROPERTIES = "\\src\\main\\resources\\Url.properties";
+    private static final String PATH_CONFIGURATIONS_PROPERTIES = "\\src\\main\\resources\\Configurations.properties";
+    private static final String PATH_OBJECT_REPOSITORY_PROPERTIES = "\\src\\main\\resources\\ObjectRepository.properties";
+
     public String getPropertiesUrl(String key){
         FileReader reader= null;
         try {
-            File file =new File(System.getProperty("user.dir")+"\\src\\main\\resources\\Url.properties");
+            File file =new File(System.getProperty("user.dir")+PATH_URL_PROPERTIES);
             reader = new FileReader(file);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -28,7 +32,7 @@ public class Utilities {
     public String getPropertiesConfigurations(String key){
         FileReader reader= null;
         try {
-            File file =new File(System.getProperty("user.dir")+"\\src\\main\\resources\\Configurations.properties");
+            File file =new File(System.getProperty("user.dir")+PATH_CONFIGURATIONS_PROPERTIES);
             reader = new FileReader(file);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -45,7 +49,7 @@ public class Utilities {
     public String getPropertiesObjectRepository(String key){
         FileReader reader= null;
         try {
-            File file =new File(System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectRepository.properties");
+            File file =new File(System.getProperty("user.dir")+PATH_OBJECT_REPOSITORY_PROPERTIES);
             reader = new FileReader(file);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

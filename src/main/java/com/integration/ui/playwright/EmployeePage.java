@@ -1,16 +1,15 @@
 package com.integration.ui.playwright;
 
 import com.microsoft.playwright.Page;
-
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class LoginPage{
+public class EmployeePage {
 
     //private String locator="input[@id='name']";
 
    private Page page;
 
-    public LoginPage(Page page){
+    public EmployeePage(Page page){
         this.page=page;
     }
 
