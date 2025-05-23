@@ -17,16 +17,16 @@ public class LoginPageTest {
     @BeforeTest
     public void setupBrowser() {
         page = new TestBase().
-                getBrowser(new Utilities().getPropertiesConfigurations("Browser"),
-                        new Utilities().getPropertiesUrl("urlEpmaloyee"),
-                        new Utilities().getPropertiesConfigurations("headless"));
+                getBrowser(new Utilities().getPropertiesConfigurations("BROWSER"),
+                        new Utilities().getPropertiesUrl("URL_EMPLOYEE"),
+                        new Utilities().getPropertiesConfigurations("HEADLESS"));
         login = new LoginPage(page);
     }
 
     @Test
     public void runTest() {
         String title1 = login.verifyTitle();
-        Assert.assertEquals(title1,new Utilities().getPropertiesUrl("EmployeeTitle"));
+        Assert.assertEquals(title1,new Utilities().getPropertiesUrl("TITLE_EMPLOYEE"));
     }
 
     @AfterTest

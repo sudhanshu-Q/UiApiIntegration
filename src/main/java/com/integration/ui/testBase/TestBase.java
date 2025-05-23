@@ -46,7 +46,7 @@ public class TestBase {
 
     public Page getBrowser (String browserName, String url,String headless){
 
-        headless=new Utilities().getPropertiesConfigurations("headless");
+        headless=new Utilities().getPropertiesConfigurations("HEADLESS");
         boolean browserHeadless = Boolean.parseBoolean(headless);
         if (browserName.equalsIgnoreCase("Firefox")) {
             playwright = Playwright.create();
