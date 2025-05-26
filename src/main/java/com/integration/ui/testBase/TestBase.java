@@ -52,12 +52,14 @@ public class TestBase {
             browserType = playwright.firefox();
             browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(browserHeadless));
             page = browser.newPage();
+            //page.setDefaultTimeout(90000);
             page.navigate(url);
         } else if (browserName.equalsIgnoreCase("chrome")) {
             playwright = Playwright.create();
             browserType = playwright.chromium();
             browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(browserHeadless));
             page = browser.newPage();
+            //page.setDefaultTimeout(90000);
             page.navigate(url);
         } else {
             System.out.println("Wrong browser name");
@@ -92,6 +94,7 @@ public class TestBase {
         log.info("Shutdown");
         browser.close();
         playwright.close();
+        page.close();
         System.out.println("shutdown..suite");
     }
 }

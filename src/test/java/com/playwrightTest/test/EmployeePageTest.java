@@ -25,14 +25,12 @@ public class EmployeePageTest {
 
     @Test
     public void runTest() {
-        String getTitle = employeePage.verifyTitle();
-        System.out.println(getTitle);
-        Assert.assertEquals(getTitle,new Utilities().getPropertiesUrl("TITLE_EMPLOYEE"));
+        employeePage.verify_EmployeePage();
     }
 
     @AfterTest
     public void stopTest(){
-        page.close();
+       // page.close();
         System.out.println("shutdown..Employee Test");
     }
 }
