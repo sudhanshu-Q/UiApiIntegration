@@ -1,4 +1,4 @@
-package com.playwrightTest.test;
+package com.playwrightTest;
 
 import com.integration.ui.playwright.EmployeePage;
 import com.integration.ui.testBase.TestBase;

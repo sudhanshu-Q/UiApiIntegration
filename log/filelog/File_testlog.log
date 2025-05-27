@@ -1,0 +1,49 @@
+2025-05-27 17:48:59,382 DEBUG [main] Utilities:41 - C:\Projects\Api-Ui-Integration\src\main\resources\Configurations.properties
+2025-05-27 17:48:59,386 DEBUG [main] Utilities:52 - Key : BROWSER Value : chrome
+2025-05-27 17:48:59,387 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:48:59,387 DEBUG [main] Utilities:33 - Key : URL_EMPLOYEE Value : http://username:password123@localhost:8010/Employee
+2025-05-27 17:48:59,387 DEBUG [main] Utilities:41 - C:\Projects\Api-Ui-Integration\src\main\resources\Configurations.properties
+2025-05-27 17:48:59,388 DEBUG [main] Utilities:52 - Key : HEADLESS Value : false
+2025-05-27 17:48:59,388 DEBUG [main] Utilities:41 - C:\Projects\Api-Ui-Integration\src\main\resources\Configurations.properties
+2025-05-27 17:48:59,389 DEBUG [main] Utilities:52 - Key : HEADLESS Value : false
+2025-05-27 17:49:12,285 DEBUG [main] Utilities:60 - C:\Projects\Api-Ui-Integration\src\main\resources\ObjectRepository.properties
+2025-05-27 17:49:12,287 DEBUG [main] Utilities:71 - Key : UsernameXpath Value : //input[@placeholder='Username']
+2025-05-27 17:49:12,288 DEBUG [main] Utilities:60 - C:\Projects\Api-Ui-Integration\src\main\resources\ObjectRepository.properties
+2025-05-27 17:49:12,289 DEBUG [main] Utilities:71 - Key : DropDownXpath Value : //select[@id='course']
+2025-05-27 17:49:12,353 DEBUG [main] ElementsUtilities:32 - Title of the page : Employee Service
+2025-05-27 17:49:12,354 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,355 DEBUG [main] Utilities:33 - Key : TITLE_EMPLOYEE Value : Employee Service
+2025-05-27 17:49:12,357 DEBUG [main] ElementsUtilities:51 - Get Title of page from active session : Employee Service
+2025-05-27 17:49:12,357 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,359 DEBUG [main] Utilities:33 - Key : TITLE_EMPLOYEE Value : Employee Service
+2025-05-27 17:49:12,359 DEBUG [main] ElementsUtilities:52 - Get Title of page from Configuration : Employee Service
+2025-05-27 17:49:12,360 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,361 DEBUG [main] Utilities:33 - Key : TITLE_EMPLOYEE Value : Employee Service
+2025-05-27 17:49:12,361 DEBUG [main] ElementsUtilities:53 - Assert Title of page : true
+2025-05-27 17:49:12,362 DEBUG [main] ElementsUtilities:21 - URL of the page : http://username:password123@localhost:8010/Employee
+2025-05-27 17:49:12,362 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,363 DEBUG [main] Utilities:33 - Key : URL_EMPLOYEE Value : http://username:password123@localhost:8010/Employee
+2025-05-27 17:49:12,364 DEBUG [main] ElementsUtilities:62 - Get Url of page from active session : http://username:password123@localhost:8010/Employee
+2025-05-27 17:49:12,364 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,364 DEBUG [main] Utilities:33 - Key : URL_EMPLOYEE Value : http://username:password123@localhost:8010/Employee
+2025-05-27 17:49:12,365 DEBUG [main] ElementsUtilities:63 - Get Url of page from Configuration : http://username:password123@localhost:8010/Employee
+2025-05-27 17:49:12,365 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,365 DEBUG [main] Utilities:33 - Key : URL_EMPLOYEE Value : http://username:password123@localhost:8010/Employee
+2025-05-27 17:49:12,366 DEBUG [main] ElementsUtilities:64 - Assert url : true
+2025-05-27 17:49:12,405 DEBUG [main] ElementsUtilities:82 - Is Locator Editable : true
+2025-05-27 17:49:12,424 DEBUG [main] ElementsUtilities:85 - Get locator : //input[@placeholder='Username'] | Get TestData : Tsest
+2025-05-27 17:49:12,430 DEBUG [main] ElementsUtilities:95 - Is Locator Visible : true
+2025-05-27 17:49:12,443 DEBUG [main] ElementsUtilities:97 - Select Option : python
+2025-05-27 17:49:12,444 DEBUG [main] ElementsUtilities:28 - Verify Employee Page 
+2025-05-27 17:49:12,465 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,466 DEBUG [main] Utilities:33 - Key : GET_BASE_URI Value : http://localhost:8010
+2025-05-27 17:49:12,468 DEBUG [main] RequestService:46 - {content-type=application/json}
+2025-05-27 17:49:12,469 DEBUG [main] Utilities:41 - C:\Projects\Api-Ui-Integration\src\main\resources\Configurations.properties
+2025-05-27 17:49:12,470 DEBUG [main] Utilities:52 - Key : USERNAME Value : username
+2025-05-27 17:49:12,470 DEBUG [main] Utilities:41 - C:\Projects\Api-Ui-Integration\src\main\resources\Configurations.properties
+2025-05-27 17:49:12,472 DEBUG [main] Utilities:52 - Key : PASSWORD Value : password123
+2025-05-27 17:49:12,472 DEBUG [main] Utilities:22 - C:\Projects\Api-Ui-Integration\src\main\resources\Url.properties
+2025-05-27 17:49:12,473 DEBUG [main] Utilities:33 - Key : GET_USER_API Value : /users
+2025-05-27 17:49:13,101 DEBUG [main] RequestService:26 - com.microsoft.playwright.impl.APIResponseImpl@1672fe87
+2025-05-27 17:49:13,104 DEBUG [main] UserApiTest:30 - [{"id":1,"name":"user1","birthDate":"1991-05-27"},{"id":2,"name":"user2","birthDate":"1995-05-27"},{"id":3,"name":"user3","birthDate":"2002-05-27"},{"id":4,"name":"user4","birthDate":"2010-05-27"}]
+2025-05-27 17:49:13,107 DEBUG [main] ResponseValidations:13 - Status Code is : 200 and expected status code is : 200
