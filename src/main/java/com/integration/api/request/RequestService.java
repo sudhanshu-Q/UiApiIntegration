@@ -63,7 +63,6 @@ public class RequestService {
         return response;
     }
 
-
     public APIResponse delete_Request(String baseUri,
                                Map<String, String> headers,
                                String username,
@@ -77,6 +76,22 @@ public class RequestService {
                         setHttpCredentials(username, password));
         APIResponse response = apiRequestContext.delete(endpointUrl+"/"+id,
                 RequestOptions.create());
+        log.debug(response.toString());
+        return response;
+    }
+
+    public APIResponse healthCheck(String baseUri,
+                                   Map<String, String> headers,
+                                   String username,
+                                   String password,
+                                      String endpointUrl) {
+        Playwright playwright = Playwright.create();
+        APIRequestContext apiRequestContext = playwright.request().
+                newContext(new APIRequest.NewContextOptions().
+                        setBaseURL(baseUri).
+                        setExtraHTTPHeaders(headers).
+                        setHttpCredentials(username, password));
+        APIResponse response = apiRequestContext.get(endpointUrl , RequestOptions.create());
         log.debug(response.toString());
         return response;
     }

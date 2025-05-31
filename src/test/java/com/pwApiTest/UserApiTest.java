@@ -8,26 +8,19 @@ import com.integration.utilities.Utilities;
 import com.microsoft.playwright.APIResponse;
 import com.pwApiTest.responseValidator.ResponseValidations;
 import org.apache.log4j.Logger;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserApiTest {
+public class UserApiTest extends BasePwTest{
 
     private final static Logger log = Logger.getLogger(UserApiTest.class);
-    private Integer id=5;
+    private Integer id=4;
     private String name="new test";
     private LocalDate birthdate=LocalDate.of(1994,06,11);
 
-    @BeforeTest
-    public void runBeforeTestApi(){
-
-        System.out.println("before Test");
-    }
 
     @Test(priority = 1)
     public void getUserTest_01(){
@@ -103,9 +96,5 @@ public class UserApiTest {
         new ResponseValidations().validateUrl(response,"http://localhost:8010/users/"+id);
     }
 
-    @AfterTest
-    public void runAfterSuiteApi(){
-        System.out.println("After Test APi");
 
-    }
 }
