@@ -36,7 +36,7 @@ public class BaseTest {
         System.out.println("starting..method");
     }
 
-    public APIResponse createSetup (String baseUri,HashMap<String,String> headers,String username,String password,String endpointUrl){
+    public APIResponse createSetup (String baseUri,Map<String,String> headers,String username,String password,String endpointUrl){
 
         String BaseURL=baseUri;
         Playwright playwright=Playwright.create();
