@@ -38,5 +38,22 @@ public class RequestPayload {
         return payloadUserUpdate;
     }
 
+    public static String createNewEmployee( String name,Integer salary,
+                                            Integer age,Integer id) {
+        String payloadEmployee=null;
+        try{
+            payloadEmployee = "{\n" +
+                    "  \"name\": "+ name + ",\n" +
+                    "  \"salary\": \"" + salary + "\",\r\n" +
+                    "  \"age\": \"" + age + "\",\r\n" +
+                    "  \"id\": \"" + id + "\"\r\n" +
+                    "}";
+            log.debug(payloadEmployee);
+        } catch (Exception e) {
+            log.error("ERROR FOR CREATE EMPLOYEE REQUEST PAYLOAD : "+e.getMessage());
+        }
+        return payloadEmployee;
+    }
 
 }
+

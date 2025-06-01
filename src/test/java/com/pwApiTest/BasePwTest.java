@@ -23,13 +23,11 @@ public class BasePwTest {
                 new Utilities().getPropertiesUrl("HEALTH_CHECK"));
         log.debug(response.text());
         new ResponseValidations().validateStatusCode(response,200);
-        //new ResponseValidations().validateUrl(response,"http://localhost:8010/users");
-        System.out.println("before Test");
     }
 
     @AfterClass
     public void runAfterSuiteApi(){
-        System.out.println("After Test APi");
+        log.debug("After class executed ");
 
     }
 }
