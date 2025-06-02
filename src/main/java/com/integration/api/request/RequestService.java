@@ -102,4 +102,36 @@ public class RequestService {
         log.debug(headers);
         return headers;
     }
+
+    public Map<String, String> commonHeadersVersioning_1(){
+        Map<String, String> headers = new HashMap<>();
+        headers.put("content-type", "application/json");
+        headers.put("X-API-VERSION", "1");
+        log.debug(headers);
+        return headers;
+    }
+
+    public Map<String, String> commonHeadersVersioning_2(){
+        Map<String, String> headers = new HashMap<>();
+        headers.put("content-type", "application/json");
+        headers.put("X-API-VERSION", "2");
+        log.debug(headers);
+        return headers;
+    }
+
+    public Map<String, String> commonHeaders_MediaType_Versioning_1(){
+        Map<String, String> headers = new HashMap<>();
+        headers.put("content-type", "application/json");
+        headers.put("produces", "application/vnd.company.app-v1+json");
+        log.debug(headers);
+        return headers;
+    }
+
+    public Map<String, String> commonHeaders_MediaType_Versioning_2(){
+        Map<String, String> headers = new HashMap<>();
+        headers.put("content-type", "application/json");
+        headers.put("produces", "application/vnd.company.app-v2+json");
+        log.debug(headers);
+        return headers;
+    }
 }
