@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.extentListeners.ExtentListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Employee Test">
+        <classes>
+            <class name="com.playwrightTest.EmployeePageTest">
+                <methods>
+                    <include name="verifyEmployeePageTest"/>
+                </methods>
+            </class>
+            <class name="com.pwApiTest.UserApiTest">
+            </class>
+        </classes>
+    </test></suite>

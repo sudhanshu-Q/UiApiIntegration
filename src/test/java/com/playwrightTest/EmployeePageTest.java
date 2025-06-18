@@ -24,7 +24,7 @@ public class EmployeePageTest {
     }
 
     @Test
-    public void runTest() {
+    public void verifyEmployeePageTest() {
         employeePage.verify_EmployeePage();
     }
 
