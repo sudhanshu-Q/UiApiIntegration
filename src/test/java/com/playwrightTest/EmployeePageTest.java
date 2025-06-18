@@ -1,4 +1,4 @@
-package com.playwrightTest.test;
+package com.playwrightTest;
 
 import com.integration.ui.playwright.EmployeePage;
 import com.integration.ui.testBase.TestBase;
@@ -24,7 +24,7 @@ public class EmployeePageTest {
     }
 
     @Test
-    public void runTest() {
+    public void verifyEmployeePageTest() {
         employeePage.verify_EmployeePage();
     }
 
