@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-
 public class BasePwTest {
 
     private final static Logger log = Logger.getLogger(BasePwTest.class);
