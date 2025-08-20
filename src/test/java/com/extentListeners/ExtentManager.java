@@ -14,7 +14,7 @@ public class ExtentManager {
         //set report config for look and feel
         extentSparkReporter.config().setTheme(Theme.DARK);
         extentSparkReporter.config().setDocumentTitle("Automation Report");
-        extentSparkReporter.config().setReportName(System.getProperty("user.dir").toString());
+        extentSparkReporter.config().setReportName(System.getProperty("user.dir").toString().toUpperCase().substring(12,30));
         extentSparkReporter.config().setEncoding("utf-8");
         // set test in report
         extent = new ExtentReports();

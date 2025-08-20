@@ -44,7 +44,7 @@ public class EmployeeApiTest extends BasePwTest{
                 API_USERNAME,
                 API_PASSWORD,
                 ADD_EMPLOYEE_API_URL,
-                RequestPayload.createNewEmployee("SHUKLA",12400,33,2));
+                RequestPayload.createNewEmployee("sudhanshu",12400,33,2));
         log.debug(response.text());
         new ResponseValidations().validateStatusCode(response,200);
         new ResponseValidations().validateUrl(response,BASE_URI+ADD_EMPLOYEE_API_URL);

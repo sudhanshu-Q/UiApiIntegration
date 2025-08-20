@@ -15,8 +15,8 @@ public class MediaTypeVersioningApiTest extends BasePwTest{
     private final static String BASE_URI=new Utilities().getPropertiesUrl("GET_BASE_URI");
     private final static String API_USERNAME=new Utilities().getPropertiesConfigurations("USERNAME");
     private final static String API_PASSWORD=new Utilities().getPropertiesConfigurations("PASSWORD");
-    private final static Map<String, String> GET_HEADERS_COMMON_VER_1=new RequestService().commonHeaders();
-    private final static Map<String, String> GET_HEADERS_COMMON_VER_2=new RequestService().commonHeaders();
+    private final static Map<String, String> GET_HEADERS_COMMON_VER_1=new RequestService().commonHeaders_MediaType_Versioning_1();
+    private final static Map<String, String> GET_HEADERS_COMMON_VER_2=new RequestService().commonHeaders_MediaType_Versioning_2();
     private final static RequestService requestService=new RequestService();
 
     @Test(priority = 1)

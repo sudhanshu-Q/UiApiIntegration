@@ -1,6 +1,5 @@
 package com.pwApiTest;
 
-import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.integration.api.request.RequestService;
 import com.integration.utilities.Utilities;
 import com.microsoft.playwright.APIResponse;
